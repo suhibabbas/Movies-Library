@@ -14,7 +14,7 @@ server.use(cors());
 
 server.get('/',handelmovies)
 server.get('/favorite',handelfavorite)
-server.get('*',handelNotFound);
+server.use('*',handelNotFound);
 
 function Movies(title,poster_path,overview){
 
@@ -33,7 +33,7 @@ function handelmovies(req,res){
     res.status(200).json(movie)
 }
 function handelNotFound(req,res){
-    res.status(500).send("Sorry, something went wrong")
+    res.status(404).send("page not found")
 }
 
 
