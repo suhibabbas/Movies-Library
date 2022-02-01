@@ -3,8 +3,8 @@ Movies-Library
 **Author Name**: Suhib
 
 ## WRRC
-
-
+![WRRC](assets/wrrc_1.png)
+![WRRC](assets/wrrc_2.png)
 ## Overview
 
 ## Getting Started
