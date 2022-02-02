@@ -15,7 +15,7 @@ const server = express();
 
 server.use(cors());
 
-server.get('/', )
+server.get('/',handelmovies )
 server.get('/favorite', handelfavorite)
 server.get('/trending', handeltrending)
 server.get('/search', handelsearch)
