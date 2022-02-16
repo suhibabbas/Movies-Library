@@ -108,7 +108,10 @@ function handelmovies(req, res) {
 }
 
 function handelfavorite(req, res) {
-    res.status(200).send("Welcome to Favorite Page")
+     let sql = `SELECT * FROM movies;`
+    client.query(sql).then(data => {
+        res.status(200).json(data.rows)
+    })
 }
 
 function handeltrending(req, res) {
